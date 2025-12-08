@@ -5,4 +5,4 @@
 - Hussein Hirsi
 
 ## Colab Worksheet
-- Colab Worksheet (Serena): [child_mortality_analysis.ipynb](./child_mortality_rate.ipynb)
+- Colab Worksheet (Serena): [child_mortality_analysis.py](./child_mortality_rate.py)
