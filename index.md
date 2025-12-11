@@ -45,6 +45,12 @@ Overall, the figure highlights global progress in reducing child mortality from 
 #### Part II
 For finding a connection between extreme poverty rates and child mortality causes I first started with loading the data into a colab with the idea to merge them. Before I could, the dataset containing the extreme poverty rates had a lot of missing data that I needed to figure out what to do with. I decided to filter past the year 1950 and then drop any missing data from the extreme poverty column. Next I removed any entries that were duplicates or unneeded. The second dataset containing information on causes of child mortality was completely intact, but due to a limit on exporting I was only able to get the year up to 2001. With both datasets cleaned I decided to merge the two.
 With the datasets merged I was then ready to create a visualization. This was something that stumped me for a while as I was considering the different ways to display data like the extreme poverty rates and cause of death rates for each cause of death. This information was gonna be displayed for each country so because of how many parts were involved I settled on categorizing the causes of death from 1-3 based on how preventable the cause is financially. Each cause was assigned a category which was mapped as a column in the dataframe. This is where I began to face a lot of difficulties with my code. For starters, I had originally planned to group countries by region and year, aggregate and average the data for the countries in each region, and then display the regional data. For some reason however when I averaged the data the entries, regardless of the year, we’re all the same thing. I couldn’t figure out how to fix this so I ended up downsizing to just one region, had the same issue, and ended up just examining a handful of random countries.
+
+![Figure 1](graph1.png)
+![Figure 2](graph2.png)
+![Figure 3](graph3.png)
+![Figure 4](graph4.png)
+
 For each subplot I planned on making I made a filtered version of the dataframe containing entries relating to one of the 3 categories for causes of deaths. I then tried to play around with adding the traces using a for loop to avoid adding them individually but had trouble and eventually just used AI to make it for me. I also decided to make a separate subplot containing the extreme poverty rates for comparison. The idea was to compare the categorized causes of death subplots to the extreme poverty 
 rates and see if any countries had any correlations. Some of the subplots came out like:
 
