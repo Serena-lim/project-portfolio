@@ -5,7 +5,7 @@
 - Hussein Hirsi
 
 ## Colab Worksheet
-- Colab Worksheet (Serena): [child_mortality_analysis.py](./child_mortality_rate.py)
+- Colab Worksheet (Serena): [child_mortality_analysis](https://colab.research.google.com/drive/1mtLnA9waputmxI0OJQQwwtv-4PoL7d9c?usp=sharing)
 
 ## Part II Report
 
@@ -33,6 +33,8 @@ To see if there is a connection between causes of child mortality and extreme po
 #### Part I
 The first part of the analysis examines how child mortality has changed over time across selected countries. To achieve this, the dataset was filtered to include only observations from 1957 to 2023, in order to ensure a consistent time window. For this analysis, I selected seven countries to illustrate a range of economic and demographic contexts: the United States, Japan, China, India, Brazil, Nigeria, and Ethiopia. 
 For each country, I used a for loop to subset the data and plot its annual child mortality rate across the selected time period. I put “year” on the x-axis, and “child mortality rate” on the y-axis, producing one line per country. The resulting line chart visualizes long-term trends in child mortality from 1957 to 2023. 
+
+<iframe src="mortality_rate.html" width="100%" height="600" style="border:none;"> </iframe>
 
 From the graph, we can see that all seven countries exhibit substantial declines in child mortality over the 66-year period. This reflects global improvements in healthcare, vaccination, nutrition and access to medical services. However, the magnitude, timing, and steepness of these declines differ across countries. 
 High income countries such as Japan and the United States start with relatively low child mortality rates and experience steady declines, reaching near-zero levels by the 2000s. The sharp increase in China’s child mortality rate around 1960 corresponds to the Great Chinese Famine that took place from 1959 to 1961. Beginning in the 1960s, China showed a rapid decline in child mortality rate, which might be associated with major public health initiatives and accelerated economic development. Brazil and India also exhibit continuous downward trends, though at a slower pace compared to China. 
