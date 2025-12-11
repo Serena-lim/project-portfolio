@@ -58,9 +58,10 @@ Analyzing the data there was definitely variation in what causes of child mortal
 The third part examines the relationship between economic development and child mortality. For simplicity, I filtered the dataset so it contains only the data from the year 2020, which is the most recent year with comprehensive global data. Then, I removed entries without an ISO country code to exclude aggregate regions such as Asia, European Union. Next, I removed rows that contained missing or non-numeric values in either “GDP per capita” or “Child mortality rate”, and both variables were converted into numeric variables. Observations with a GDP per capita of zero were also excluded, since later procedures require positive values. After these steps, the 2020 samples consisted of 163 countries. 
 I created a scatter plot with GDP per capita on the x-axis and child mortality rate on the y-axis. From the graph, we can see a clear negative association between the two variables: countries with higher GDP per capita tend to have lower child mortality rates. 
 
-
+<iframe src="mortality_GDP.html" width="100%" height="600" style="border:none;"> </iframe>
 To quantify this relationship, I built an ordinary least squares (OLS) regression model. In this mode, the child mortality rate was regressed on the logarithm of GDP per capita. The regression results indicate a strong and statistically significant negative relationship. The coefficient on log GDP per capita is -1.8449 (p < 0.001), implying that higher GDP levels are associated with lower child mortality rates. The model explains 60.6% of the cross-country variation (R^2 = 0.606), suggesting that economic development is a major predictor of global disparities in child mortality. 
 
+<iframe src="mortality_regression.html" width="100%" height="600" style="border:none;"> </iframe>
 ### Conclusion
 #### Key Findings
 - Child mortality rate has decreased from 1957 to 2023 across countries, but there are still differences between low-income and high-income countries.
